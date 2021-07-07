@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" packages="">
+    <Appenders>
+        <Console name="console">
+            <PatternLayout pattern="%level - %m%n"/>
+        </Console>
+        <List name="List">
+            <PatternLayout pattern="%level - %m%n" />
+        </List>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="List"/>
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>
